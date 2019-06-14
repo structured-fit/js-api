@@ -1,0 +1,6 @@
+.nyc_output/
+.yalc/
+coverage/
+dist/
+node_modules/
+yalc.lock

@@ -1,0 +1,30 @@
+= Structured Fitness JS/TS API
+
+A library used to communicate with the link:https://structured.fit/[Structured Fitness] API.
+
+This library is written in TypeScript, so it can be used in either JavaScript or TypeScript.
+
+- Uses link:https://github.com/fluture-js/Fluture[Futures], allowing type checking for errors and lazy code execution.
+
+== For Maintainers
+
+=== Repository Synchronization
+
+This repository is both in a public GitHub repository as well as in the private monolithic repository for Structured Fitness.
+
+The repository is manually synced, with all actions executed from inside the private monolithic repository.
+
+.Pull contributions from GitHub:
+[source,sh]
+----
+git subtree pull -P js-api git@github.com:structured-fit/js-api.git master
+----
+
+.Push updates to GitHub:
+[source,sh]
+----
+git pull origin js-api
+git subtree split -P js-api --branch js-api --rejoin
+git push origin js-api
+git push git@github.com:structured-fit/js-api.git js-api:master
+----

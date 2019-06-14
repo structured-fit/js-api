@@ -1,0 +1,8 @@
+.nyc_output/
+coverage/
+dist/src/*.js.map
+dist/test/
+src/
+.editorconfig
+.gitignore
+.travis.yml

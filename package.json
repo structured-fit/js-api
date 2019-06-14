@@ -1,0 +1,57 @@
+{
+  "name": "@structured-fit/js-api",
+  "version": "0.0.0",
+  "description": "JavaScript/TypeScript API for interacting with Structured Fitness",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && nyc ava"
+  },
+  "nyc": {
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts",
+      ".yalc/**",
+      "test/**"
+    ],
+    "reporter": [
+      "lcov",
+      "html",
+      "text"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/structured-fit/js-api.git"
+  },
+  "author": "Structured Fitness (https://structured.fit/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/structured-fit/js-api/issues"
+  },
+  "homepage": "https://github.com/structured-fit/js-api#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/request": "^2.48.1",
+    "@types/superagent": "^4.1.1",
+    "@types/supertest": "^2.0.7",
+    "ava": "^2.1.0",
+    "express": "^4.17.1",
+    "nyc": "^14.1.1",
+    "supertest": "^4.0.2",
+    "typescript": "^3.5.1"
+  },
+  "dependencies": {
+    "@structured-fit/js-api-definitions": "^0.0.0",
+    "class-transformer": "^0.2.3",
+    "class-transformer-validator": "^0.7.1",
+    "class-validator": "^0.9.1",
+    "fluture": "^12.0.0-beta.2",
+    "reflect-metadata": "^0.1.13",
+    "request": "^2.88.0",
+    "superagent": "^5.0.6"
+  }
+}
