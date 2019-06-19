@@ -45,7 +45,7 @@
     "typescript": "^3.5.1"
   },
   "dependencies": {
-    "@structured-fit/js-api-definitions": "^0.0.1",
+    "@structured-fit/js-api-definitions": "^0.0.2",
     "class-transformer": "^0.2.3",
     "class-transformer-validator": "^0.7.1",
     "class-validator": "^0.9.1",
