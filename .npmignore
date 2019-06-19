@@ -1,8 +1,10 @@
 .nyc_output/
 coverage/
-dist/src/*.js.map
+dist/src/**/*.js.map
 dist/test/
 src/
+test/
 .editorconfig
 .gitignore
 .travis.yml
+tsconfig.json
