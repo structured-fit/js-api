@@ -27,6 +27,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/structured-fit/js-api.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Structured Fitness (https://structured.fit/)",
   "license": "MIT",
   "bugs": {
